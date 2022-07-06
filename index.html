@@ -53,7 +53,7 @@ body {
 pre{color:unset;}
   </style>
 </head>
-<body class="dark modal-open">
+<body class="dark">
   <script type="text/javascript">
     if(
       localStorage.getItem("theme") === "dark"
@@ -167,7 +167,7 @@ pre{color:unset;}
 
   
 
-<div class="modal fade show" id="account_selection" tabindex="-1" data-account-type="" style="z-index: 1040; display: block;" aria-modal="true">
+<div class="modal fade" id="account_selection" tabindex="-1" data-account-type="">
   <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -178,8 +178,17 @@ pre{color:unset;}
         <div id="account_list" style="display: none;">
           <table class="table table-hover table-sm table-borderless"><tbody></tbody></table><hr>
         </div>
-        
-        
+        <h5>Add another account:</h5>
+        <div class="form-row align-items-center pb-3">
+          <div class="col">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="custom_oauth" data-toggle="collapse" data-target="#custom_oauth_rows" autocomplete="off">
+              <label class="custom-control-label" for="custom_oauth">Use custom OAuth credentials </label>
+              <span id="custom_oauth_info1"> <a data-toggle="modal" href="#oauth_modal">(what is that?)</a></span>
+              <span id="custom_oauth_info2"> (log out from all accounts to change)</span>
+            </div>
+          </div>
+        </div>
         <div id="custom_oauth_rows2"><div id="custom_oauth_rows" class="collapse">
           <div class="form-row align-items-center pb-3">
             <div class="col">
@@ -385,4 +394,4 @@ https://drive.google.com/open?id=&lt;folder id&gt;</pre></code>
   <script src="main.obf.js"></script><div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Donate</h5><button type="button" class="close" data-dismiss="modal"><span>×</span></button></div><div class="modal-body"><p>If you like this project you can donate to me (person who made this page/script, not the person who shared the encrypted folder!). You can send <a href="https://www.amazon.de/Digitaler-Amazon-Gutschein-Blaues-Amazon/dp/B07Q1JNC7R/?language=en_GB">Amazon Gift Cards</a> or anything else you want to <img class="donate-image" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAWCAIAAAB8GDRYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAILSURBVFhH7VbZdQIxDEyTdEIl28f2QR8UQnRZl+UsL4m5nudLkkdjaeIAX7eFOVjOzsJydhaWs7OwnJ2FRzl72U6n7SLReb9S8XdAKQ+WfTk83tm/gEyNf5frfn5NeytnZVhBm5ne2kWP3H41H6Cv67zv/ZuNZrvM6XkXsVy/dmoYzNnK3I1jtLJOZ0M03EUejNnQOxsWJkHOWFtOMBG5Ed8b4Xsh5nJotMyXXYxyLiSAjqi5y7AndHHMTVz2FNdpOCaHtlLj6NPAdrMIETOD1hMh6PAUkTFqFMDwtlI7R6oktlzqb6nvC5zqvkNybsKGJDJyFlsbuCWKZenMt00ZdjUwf3SW11IhBtSqJlO1+1Sf0Q6MAPCcqMg4IuN5ByUx6k8D49m9cYJY7/lhNgDmyueDkaBAdJkMCR0mFqTVnPlizI/MCjgi5+0qdM6mwezeOIFmI36ku1QbIiPxBc4XatJmQhBt3Umopf/qbNmUUDmrPXhBezVJTLMhnxI5QVJLIO4J3FkKEhmDdGotXijeRYndxhGXfWzNgmMy3RnKmgiKz1mkCUBEtTQguGzAB/DygPJXF8eNgL+TesEgpf0EEHEhkQhY3DYTlqM7nLXqHWS3HUAJhtE32OshbNuB1qSd/fLPxPs4C0DTCtuoXD6rZ+KtnCX4f0JGfMnL2U/HcnYWlrOzsJydg9vtG7hDy+03ULxsAAAAAElFTkSuQmCC">.</p></div></div></div></div><footer class="footer"><div class="container"><div class="text-muted">made by <b>M0NIXGA</b> | <a data-toggle="modal" href="#donate"></a><a href="https://github.com/anadius/gd-efc"></a><a href="https://discord.gg/5KryY7fFhm">Discord</a></div><div class="text-muted"><b></b></div></div></footer>
 
 
-<div class="modal-backdrop fade show modal-stack" style="z-index: 1039;"></div></body></html>
+</body></html>
