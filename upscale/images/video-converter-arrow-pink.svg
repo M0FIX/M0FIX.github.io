@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>箭头-粉色备份</title>
+    <g id="产品页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-Converter" transform="translate(-853.000000, -7936.000000)">
+            <g id="编组-12" transform="translate(393.000000, 7658.000000)">
+                <g id="编组-10" transform="translate(16.000000, 276.000000)">
+                    <g id="箭头-粉色备份" transform="translate(444.000000, 2.000000)">
+                        <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                        <g id="编组-35" transform="translate(2.000000, 2.000000)" stroke="#FF5F58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <line x1="3.22164208" y1="16.5109341" x2="15.9495641" y2="3.78301205" id="路径-5" transform="translate(9.899495, 9.899495) rotate(-315.000000) translate(-9.899495, -9.899495) "></line>
+                            <polyline id="路径-6" transform="translate(11.506031, 10.374233) rotate(-315.000000) translate(-11.506031, -10.374233) " points="6.19187305 5.06209841 16.0844172 5.05805197 16.8201885 15.6904139"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

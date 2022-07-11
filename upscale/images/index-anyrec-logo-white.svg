@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="159px" height="66px" viewBox="0 0 159 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AnyRec logo</title>
+    <g id="logo-/-wight" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="159" height="66"></rect>
+        <g id="编组-90" transform="translate(4.000000, 19.000000)">
+            <g id="编组-87" transform="translate(0.000000, 3.000000)" stroke-width="4">
+                <circle id="椭圆形" stroke="#FFFFFF" fill="#FF5F58" cx="14.5" cy="14.5" r="6.5"></circle>
+                <polyline id="路径-25" stroke="#FF5F58" stroke-linecap="round" stroke-linejoin="round" points="7 0 0 0 0 7"></polyline>
+                <polyline id="路径-25备份" stroke="#FF5F58" stroke-linecap="round" stroke-linejoin="round" transform="translate(25.500000, 3.500000) scale(-1, 1) translate(-25.500000, -3.500000) " points="29 0 22 0 22 7"></polyline>
+                <polyline id="路径-25" stroke="#FF5F58" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.500000, 25.500000) scale(1, -1) translate(-3.500000, -25.500000) " points="7 22 0 22 0 29"></polyline>
+                <polyline id="路径-25备份" stroke="#FF5F58" stroke-linecap="round" stroke-linejoin="round" transform="translate(25.500000, 25.500000) scale(-1, -1) translate(-25.500000, -25.500000) " points="29 22 22 22 22 29"></polyline>
+            </g>
+            <text id="AnyRec" font-family="Montserrat-SemiBold, Montserrat" font-size="26" font-weight="500" line-spacing="32">
+                <tspan x="45" y="25" fill="#FFFFFF">Any</tspan>
+                <tspan x="97.052" y="25" fill="#FF5F58">Rec</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
