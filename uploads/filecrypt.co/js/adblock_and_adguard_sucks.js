@@ -1,1 +1,0 @@
-isAdblock2 = false;
