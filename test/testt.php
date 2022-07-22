@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html>
 <body>
-
 <?php
-echo "My first PHP script!";
+$name = “Songchai”
+echo “สวัสดีฉันชื่อ “. $name .”<br/>”;
 ?>
-
+<hr>
+ยืนยัน :: <input type=”text” value=”<?php echo $name;?>”/>
 </body>
 </html>
