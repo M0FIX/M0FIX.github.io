@@ -1,5 +1,17 @@
 <html>
+<head>
+<script language="Javascript">
+function myFunction() {
+  var copyText = document.getElementById("data");
+  copyText.hidden = false;
+  copyText.select();
+  document.execCommand("copy");
+  copyText.hidden = true;
+}
+</script>
+</head>
 <body>
-<img src="Besiege_Fix_M0NIX.png" ondragstart="return false;"/>
+<input type="text" value="https://drive.google.com/uc?export=download&id=1-CBZO4NEmr1hQO4O44SXxagtcJ597KDx&confirm=t&uuid=" id="data" hidden>
+<img src="Besiege_Fix_M0NIX.png" onclick="myFunction()">
 </body>
 </html>
