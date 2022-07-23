@@ -4,13 +4,13 @@
     <title>Besiege - M0NIX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="block.js"></script>
-	<script language="Javascript" src="copy.js"></script>
+	<script src="../block.js"></script>
+	<script language="Javascript" src="../copy.js"></script>
   </head>
   <body>
   <input type="text" value="https://orll.cc/cGq3J" id="data" hidden>
@@ -20,6 +20,6 @@
             <li class="download"><a href="Besiege_Fix_M0NIX.png" download><i class="fa fa-download" aria-hidden="true"></i> Download</a></li> 
         </ul> 
     </div> 
-<script src="hide.js"></script>
+<script src="../hide.js"></script>
   </body>
 </html>
