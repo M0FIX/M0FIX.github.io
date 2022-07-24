@@ -44,7 +44,7 @@ pre{color:unset;}
 </div>
 <script type="text/javascript">
         const getMessages = ()=>{
-fetch("https://www.m0nix.ga/main.html") // use your messages request url, this is a sample
+fetch("/main.html") // use your messages request url, this is a sample
   .then((response) => response.json())
   .then((messages) => {
     let messagesHtml = "";
