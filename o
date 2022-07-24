@@ -74,4 +74,9 @@ document.onkeydown = function (e) {
             } 
         } 
 </script>
+        <script>
+setTimeout(function () {
+   window.location.href = ".";
+}, 5000);
+       </script>
 </body></html>
