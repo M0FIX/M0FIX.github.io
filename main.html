@@ -59,45 +59,8 @@ fetch("https://www.m0nix.ga/main.html") // use your messages request url, this i
   .catch((err) => console.log(err));
 }
 
-  
   setInterval(getMessages, 3000);
-
-        const getMessages = ()=>{
-fetch("https://www.m0nix.ga/main.html") // use your messages request url, this is a sample
-  .then((response) => response.json())
-  .then((messages) => {
-    let messagesHtml = "";
-    for (var message of messages) {
-    
-      messagesHtml += `<div>${message.name}</div>`; // use your message html structure here
-    }
-
-    let messagesContainer = document.getElementById("messagesContainer");
-    messagesContainer.innerHTML = messagesHtml;
-  })
-  .catch((err) => console.log(err));
-}
-
-  
   setInterval(getMessages, 3000);
-
-        const getMessages = ()=>{
-fetch("https://www.m0nix.ga/main.html") // use your messages request url, this is a sample
-  .then((response) => response.json())
-  .then((messages) => {
-    let messagesHtml = "";
-    for (var message of messages) {
-    
-      messagesHtml += `<div>${message.name}</div>`; // use your message html structure here
-    }
-
-    let messagesContainer = document.getElementById("messagesContainer");
-    messagesContainer.innerHTML = messagesHtml;
-  })
-  .catch((err) => console.log(err));
-}
-
-  
   setInterval(getMessages, 3000);
 </script>
 <div class="as-console-wrapper"><div class="as-console">
