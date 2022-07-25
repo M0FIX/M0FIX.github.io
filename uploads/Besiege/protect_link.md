@@ -1,3 +1,1 @@
----
-permalink: /protect_link.htm
----
+{% include_relative /protect_link.htm %}
