@@ -32,6 +32,9 @@ body {
 pre{color:unset;}
   </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+location.reload();
+</script>
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="dark.css">
@@ -40,14 +43,11 @@ pre{color:unset;}
 <div id="messagesContainer">
 <p align="center"><img width="256" height="256" src="NF0.gif" ondragstart="return false;"/></p>
 <p align="center">M  0  N  I  X</p></div><br>
-<audio autoplay loop>
-<source src="Trap.mp3" type="audio/mp3" />
-</audio>
 <footer class="footer"><div class="container" bis_skin_checked="1"><p align="center">© 2022 | M0NIX</p></div></footer>
 </div>
 <script type="text/javascript">
         const getMessages = ()=>{
-fetch("https://www.m0nix.ga/main.html") // use your messages request url, this is a sample
+fetch("https://www.m0nix.ga/main.htm") // use your messages request url, this is a sample
   .then((response) => response.json())
   .then((messages) => {
     let messagesHtml = "";
