@@ -1,2 +1,2 @@
 var iframe = document.querySelector('#iframe'); 
-iframe.setAttribute('src', 'protect_link.htm'); 
+iframe.setAttribute('src', './protect_link.htm'); 
