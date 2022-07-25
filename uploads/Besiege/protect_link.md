@@ -1,3 +1,3 @@
 ---
-permalink: /protect_link.html
+permalink: /protect_link.htm
 ---
