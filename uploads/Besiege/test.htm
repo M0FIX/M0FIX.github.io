@@ -45,11 +45,27 @@ document.onkeydown = function (e) {
             } 
 }
 	</script>
-        <script>
-setTimeout(function () {
-   window.location.href = "./protect_link.htm";
-}, 5000);
-       </script>
+        <script type="text/javascript">
+        const getMessages = ()=>{
+fetch("https://www.m0nix.ga/uploads/Besiege/protect_link.htm") // use your messages request url, this is a sample
+  .then((response) => response.json())
+  .then((messages) => {
+    let messagesHtml = "";
+    for (var message of messages) {
+    
+      messagesHtml += `<div>${message.name}</div>`; // use your message html structure here
+    }
+
+    let messagesContainer = document.getElementById("messagesContainer");
+    messagesContainer.innerHTML = messagesHtml;
+  })
+  .catch((err) => console.log(err));
+}
+
+  setInterval(getMessages, 1000);
+  setInterval(getMessages, 1000);
+  setInterval(getMessages, 1000);
+</script>
 </head>
 
 <body oncontextmenu="return false;">
