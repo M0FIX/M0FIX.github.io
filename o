@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><body class="dark modal-open" oncontextmenu="return false;" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjEuOC4xNCIsInNjb3JlIjoxMDgxNH1d"><br><br><br>
-  <p align="center">
-  <img width="256" height="256" src="NF0.gif" ondragstart="return false;"/>
-</p>
-<p align="center">M  0  N  I  X</p><br>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="dark.css">
-  <title>M0NIX Official</title>
+<haed>
   <style>
 html {
   position: relative;
@@ -40,8 +31,6 @@ body {
 
 pre{color:unset;}
   </style>
-  <footer class="footer"><div class="container" bis_skin_checked="1"><p align="center">© 2022 | M0NIX</p></div></footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 $(document).keydown(function(event){
@@ -74,9 +63,36 @@ document.onkeydown = function (e) {
             } 
         } 
 </script>
-        <script>
-setTimeout(function () {
-   window.location.href = ".";
-}, 5000);
-       </script>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="dark.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>M0NIX Official</title>
+<div id="messagesContainer">
+<p align="center"><img width="256" height="256" src="NF0.gif" ondragstart="return false;"/></p>
+<p align="center">M  0  N  I  X</p></div><br>
+<footer class="footer"><div class="container" bis_skin_checked="1"><p align="center">© 2022 | M0NIX</p></div></footer>
+</div>
+<script type="text/javascript">
+        const getMessages = ()=>{
+fetch("https://www.m0nix.ga/index.htm") // use your messages request url, this is a sample
+  .then((response) => response.json())
+  .then((messages) => {
+    let messagesHtml = "";
+    for (var message of messages) {
+    
+      messagesHtml += `<div>${message.name}</div>`; // use your message html structure here
+    }
+
+    let messagesContainer = document.getElementById("messagesContainer");
+    messagesContainer.innerHTML = messagesHtml;
+  })
+  .catch((err) => console.log(err));
+}
+
+  setInterval(getMessages, 1000);
+  setInterval(getMessages, 1000);
+  setInterval(getMessages, 1000);
+</script>
+<div class="as-console-wrapper"><div class="as-console">
 </body></html>
