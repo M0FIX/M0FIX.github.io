@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;">
+  
+<head>
+<title>M0NIX|APEX</title>
+</head>
+  
+<body oncontextmenu="return false;">
+    <iframe src="https://my-apex-stats.herokuapp.com"
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" 
+            scrolling="auto">
+  </iframe>
+<script type="text/javascript">
+        const getMessages = ()=>{
+fetch("https://www.m0nix.ga/") // use your messages request url, this is a sample
+  .then((response) => response.json())
+  .then((messages) => {
+    let messagesHtml = "";
+    for (var message of messages) {
+    
+      messagesHtml += `<div>${message.name}</div>`; // use your message html structure here
+    }
+
+    let messagesContainer = document.getElementById("messagesContainer");
+    messagesContainer.innerHTML = messagesHtml;
+  })
+  .catch((err) => console.log(err));
+}
+
+  setInterval(getMessages, 1000);
+  setInterval(getMessages, 2000);
+  setInterval(getMessages, 3000);
+</script>
+</body>
+</html>
