@@ -1,1 +1,17 @@
+<html>
+  <head>
+    <script>
+      function rekey() {
+        // Generate a new key and update the text element on the page
+        var key = Math.random().toString(36).substring(2);
+        document.getElementById('key').innerHTML = key;
+      }
 
+      // Call the rekey function every minute
+      setInterval(rekey, 60000);
+    </script>
+  </head>
+  <body>
+    <div id="key">Initial key</div>
+  </body>
+</html>
