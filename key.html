@@ -1,28 +1,26 @@
 <html>
-  <head>
-    <script>
-      function rekey() {
-        // Generate a new key and update the text element on the page
-        var key = Math.random().toString(36).substring(2);
-        document.getElementById('key').innerHTML = key;
-      }
-
-      // Call the rekey function every minute
-      setInterval(rekey, 60000);
-
-      // Add a function to handle copying the key to the clipboard
-      function copyKey() {
-        // Get the key element and select its text
-        var keyElement = document.getElementById('key');
-        keyElement.select();
-
-        // Copy the selected text to the clipboard
-        document.execCommand('copy');
-      }
-    </script>
-  </head>
   <body>
-    <div id="key">Initial key</div>
-    <button onclick="copyKey()">Copy key</button>
+    <div id="key">Loading key...</div>
+    <button id="copyButton">Copy</button>
+    <script>
+      function generateKey() {
+        // Generate a random number and convert it to a string
+        var key = Math.random().toString();
+
+        // Limit the key to 8 characters
+        key = key.substring(0, 8);
+
+        // Update the key div with the new key
+        document.getElementById("key").innerHTML = key;
+      }
+
+      // Refresh the page and generate a new key every minute
+      setInterval(generateKey, 60000);
+
+      // Add a click event listener to the copy button that copies the key to the clipboard
+      document.getElementById("copyButton").addEventListener("click", function() {
+        navigator.clipboard.writeText(document.getElementById("key").innerHTML);
+      });
+    </script>
   </body>
 </html>
