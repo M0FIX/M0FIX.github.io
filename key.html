@@ -9,9 +9,20 @@
 
       // Call the rekey function every minute
       setInterval(rekey, 60000);
+
+      // Add a function to handle copying the key to the clipboard
+      function copyKey() {
+        // Get the key element and select its text
+        var keyElement = document.getElementById('key');
+        keyElement.select();
+
+        // Copy the selected text to the clipboard
+        document.execCommand('copy');
+      }
     </script>
   </head>
   <body>
     <div id="key">Initial key</div>
+    <button onclick="copyKey()">Copy key</button>
   </body>
 </html>
