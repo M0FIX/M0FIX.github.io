@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Secret Page</title>
+  <title>Protect Key</title>
   <style>
     /* Add a dark theme to the page */
     body {
@@ -77,12 +77,16 @@
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;">Enter Key</h1>
   <form id="key-form">
+	<h1 style="text-align: center;">Enter Key</h1>
     <label for="key-input">Key:</label>
     <input type="text" id="key-input" name="key" />
     <button id="copy-button">Copy Key</button>
-    <input type="submit" value="Enter" />
+    <input type="submit" value="Enter" /><br>
+	<footer style="text-align: center;">
+  © 2022 | M0NIX
+    </footer>
+	<div id="clock"></div>
   </form>
   <script>
     // Generate a random alphanumeric key
@@ -104,7 +108,7 @@
     // Check if the entered key matches the padded key
     if (enteredKey === paddedKey) {
       // If the keys match, redirect the user to the secret page
-      window.location.href = "https://www.m0nix.ga/";
+      window.location.href = "http://m0nix.ga";
     } else {
       alert("Invalid key!"); // If the keys don't match, display an error message
     }
@@ -119,6 +123,29 @@
     navigator.clipboard.writeText(paddedKey);
     alert("Key copied to clipboard!"); // Display a message to confirm the key has been copied
   });
+</script>
+<script>
+  // Get the clock element
+  const clock = document.getElementById("clock");
+
+  // Update the clock every 1000 milliseconds (1 second)
+  setInterval(function () {
+    // Get the current time
+    const currentTime = new Date();
+
+    // Get the current hour, minute, and second
+    const hour = currentTime.getHours();
+    const minute = currentTime.getMinutes();
+    const second = currentTime.getSeconds();
+
+    // Add leading zeros to the hour, minute, and second if necessary
+    const formattedHour = hour.toString().padStart(2, "0");
+    const formattedMinute = minute.toString().padStart(2, "0");
+    const formattedSecond = second.toString().padStart(2, "0");
+
+    // Update the clock display
+    clock.innerHTML = `${formattedHour}:${formattedMinute}:${formattedSecond}`;
+  }, 1000);
 </script>
 </body>
 </html>
