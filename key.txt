@@ -1,3 +1,1 @@
 test
-https://github.com/deepbag/git-cloud-storage/blob/gh-pages/Deep%20Bag%20CV.pdf
-https://deepbag.github.io/git-cloud-storage/Deep%20Bag%20CV.pdf
