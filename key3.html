@@ -98,12 +98,17 @@
 				// Display the IP address in the page
 				document.getElementById("ip-info").innerHTML = `You IP: ${data.ip} | `;
 			});
-		// Fetch the country symbol
+		// Fetch the country code and emoji
 		fetch("https://ipapi.co/json/")
 			.then(response => response.json())
 			.then(data => {
-				// Display the country symbol in the page
-				document.getElementById("ip-info").innerHTML += `Country: ${data.country_calling_code}`;
+				// Fetch the country emoji
+				fetch(`https://unpkg.com/emoji-flags@3.0.0/json/${data.country_code.toLowerCase()}.json`)
+					.then(response => response.json())
+					.then(emojiData => {
+						// Display the country emoji in the page
+						document.getElementById("ip-info").innerHTML += `Country: ${emojiData.emoji}`;
+					});
 			});
 	</script>
 </body>
