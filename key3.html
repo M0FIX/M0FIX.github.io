@@ -96,28 +96,7 @@
 			.then(response => response.json())
 			.then(data => {
 				// Display the IP address in the page
-				document.getElementById("ip-info").innerHTML = `Machine IP: ${data.ip} | `;
-			});
-		
-		// Fetch the public IP address of the network
-		fetch("https://api.ipify.org/")
-			.then(response => response.text())
-			.then(data => {
-				// Display the public IP address in the page
-				document.getElementById("ip-info").innerHTML += `Public IP: ${data} | `;
-			});
-		
-		// Fetch the country code and emoji
-		fetch("https://ipapi.co/json/")
-			.then(response => response.json())
-			.then(data => {
-				// Fetch the country emoji
-				fetch(`https://unpkg.com/emoji-flags@3.0.0/json/${data.country_code.toLowerCase()}.json`)
-					.then(response => response.json())
-					.then(emojiData => {
-						// Display the country emoji in the page
-						document.getElementById("ip-info").innerHTML += `Country: ${emojiData.emoji}`;
-					});
+				document.getElementById("ip-info").innerHTML = `You IP: ${data.ip} | `;
 			});
 	</script>
 </body>
