@@ -1,0 +1,65 @@
+/* Set the background color to a dark gray */
+body {
+	background-color: #222;
+}
+
+/* Set the text color to a light gray */
+body, input {
+	color: #ccc;
+}
+
+/* Set the accent color to a bright blue */
+a, button {
+	color: #ccc;
+}
+
+/* Set the input box and button backgrounds to a dark gray */
+input, button {
+	background-color: #333;
+	border: none;
+}
+
+/* Set the font size of the text, input box, and buttons to 24px */
+#text, input, button {
+	font-size: 24px;
+}
+
+
+/* Set the input box and button hover colors to a light gray */
+input:hover, button:hover {
+	background-color: #444;
+}
+
+
+		#container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		footer {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			background-color: #333;
+			color: #fff;
+			padding: 1em 0;
+		}
+		
+		#ip-info {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			background-color: #333;
+			color: #fff;
+			padding: 1em 0;
+		}
