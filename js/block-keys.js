@@ -1,4 +1,3 @@
-	<script>
 		// Fetch the IP address of the machine
 		fetch("https://api.ipify.org?format=json")
 			.then(response => response.json())
@@ -22,4 +21,3 @@
 			event.preventDefault();
 		}
 	});
-</script>
