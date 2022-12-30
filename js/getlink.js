@@ -1,5 +1,4 @@
-	<script>
-		var key = ""; // Declare a global variable to store the key
+var key = ""; // Declare a global variable to store the key
 		
 		// Bind an event listener to the "Get Key" button
 		document.getElementById("key").addEventListener("click", function() {
@@ -38,4 +37,3 @@
 				window.location.href = "https://drive.google.com/uc?export=download&id=1aYlM65mzK71wsACZFtTm1LtcGNhpAY__&confirm=t&uuid=";	//sigle tabs
 			}
 		});
-	</script>
