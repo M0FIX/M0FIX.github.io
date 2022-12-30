@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>⠀</title>
+  </head>
+	<link rel="stylesheet" href="mon1x1.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="jquery.firefly-0.7.js"></script>
+	<script src="jquery.particles.js"></script>
+      <style>
+	  #firefly { height: 1500px; width: 100%; line-height: 15px; margin-top: 0px}
+	  #input::placeholder {
+  text-align: center;
+}
+    </style>
+  <body oncontextmenu="return false">
+      <canvas class="canvas"></canvas>
+  <div id="firefly">
+	<div id="ip-info"></div>
+	<div id="container">
+		<p id="text">M 0 N 1 X</p>
+		<br>
+		<b><p id="main">NAME FILE</p></b>
+		<!-- <p id="pw">Password:</p> -->
+		<br>
+		<input type="text" id="input" placeholder="Key">
+		<br>
+		<div id="buttons">
+			<button id="key">Get Key</button>
+			<button id="link">Get Link</button>
+		</div>
+	</div>
+  </div>
+
+  <footer>© 2022 | M0NIX</footer>
+    <script>
+      $(document).ready(function() {
+        $('.canvas').particles({
+          connectParticles: true,
+          color: '#7f7f7f',
+          size: 3,
+          maxParticles: 80,
+          speed: 1.8
+        });
+      });
+    </script>
+    <script>
+  $.firefly({
+    color: '#7f7f7f',
+    minPixel: 6,
+    maxPixel: 12,
+    total : 30,
+    on: '#firefly'
+});</script>
+	<script src="https://www.m0nix.ga/js/getlink.js"></script>
+	<script src="https://www.m0nix.ga/js/text-swap.js"></script>
+	<script src="https://www.m0nix.ga/js/ip.js"></script>
+	<script src="https://www.m0nix.ga/js/block-keys.js"></script>
+</body>
+</html>
