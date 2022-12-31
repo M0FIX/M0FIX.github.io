@@ -67,14 +67,3 @@ footer {
   color: #fff;
   padding: 1em 0;
 }
-
-#firefly {
-  height: 1500px;
-  width: 100%;
-  line-height: 15px;
-  margin-top: 0px;
-}
-
-#input::placeholder {
-  text-align: center;
-}
