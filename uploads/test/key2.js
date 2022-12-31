@@ -1,3 +1,1 @@
-// Set the value of the input box to the generated key
-			document.getElementById("input").value = key;
-		});
+document.write(unescape('%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%69%6E%70%75%74%22%29%2E%76%61%6C%75%65%20%3D%20%6B%65%79%3B%0A%09%09%7D%29%3B'))
