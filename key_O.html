@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>⠀</title>
+    <title>⠀</title>
+    <link rel="stylesheet" href="https://www.m0nix.ga/mon1x1.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="jquery.firefly-0.7.js"></script>
+    <script src="jquery.particles.js"></script>
   </head>
-	<link rel="stylesheet" href="mon1x1.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="https://www.m0nix.ga/js/jquery.firefly-0.7.js"></script>
-	<script src="https://www.m0nix.ga/js/jquery.particles.js"></script>
-      <style>
-	  #firefly { height: 1500px; width: 100%; line-height: 15px; margin-top: 0px}
-	  #input::placeholder {
-  text-align: center;
-}
-    </style>
-  <body oncontextmenu="return false">
-      <canvas class="canvas"></canvas>
-  <div id="firefly">
-	<div id="ip-info"></div>
-	<div id="container">
-		<p id="text">M 0 N 1 X</p>
-		<br>
-		<b><p id="main">NAME FILE</p></b>
-		<!-- <p id="pw">Password:</p> -->
-		<br>
-		<input type="text" id="input" placeholder="Key">
-		<br>
-		<div id="buttons">
-			<button id="key">Get Key</button>
-			<button id="link">Get Link</button>
-		</div>
-	</div>
-  </div>
+  <style>
+    #firefly {
+      height: 1500px;
+      width: 100%;
+      line-height: 15px;
+      margin-top: 0px
+    }
 
-  <footer>© 2022 | M0NIX</footer>
+    #input::placeholder {
+      text-align: center;
+    }
+  </style>
+  <body oncontextmenu="return false">
+    <canvas class="canvas"></canvas>
+    <div id="firefly">
+      <div id="ip-info"></div>
+      <div id="container">
+        <p id="text">M 0 N 1 X</p>
+        <br>
+        <b>
+          <p id="main">NAME FILE</p>
+        </b>
+        <!-- <p id="pw">Password:</p> -->
+        <br>
+        <input type="text" id="input" placeholder="Key">
+        <br>
+        <div id="buttons">
+          <button id="key">Get Key</button>
+          <button id="link">Get Link</button>
+        </div>
+      </div>
+	 <footer>© 2022 | M0NIX</footer>
+    </div>
     <script>
       $(document).ready(function() {
         $('.canvas').particles({
@@ -45,17 +52,24 @@
       });
     </script>
     <script>
-  $.firefly({
-    color: '#7f7f7f',
-    minPixel: 6,
-    maxPixel: 12,
-    total : 30,
-    on: '#firefly'
-});</script>
-	<script src="https://www.m0nix.ga/js/getlink.js"></script>
-	<script src="https://www.m0nix.ga/js/text-swap.js"></script>
-	<script src="https://www.m0nix.ga/js/ip.js"></script>
-	<script src="https://www.m0nix.ga/js/block-keys.js"></script>
-	<script>document.body.style.overflow = "hidden";</script>
-</body>
+      $.firefly({
+        color: '#7f7f7f',
+        minPixel: 6,
+        maxPixel: 12,
+        total: 30,
+        on: '#firefly'
+      });
+    </script>
+    <script>
+      fetch("https://api.ipify.org?format=json").then(response => response.json()).then(data => {
+        // Display the IP address in the page
+        document.getElementById("ip-info").innerHTML = `You IP: ${data.ip} `;
+      });
+    </script>
+    <script src="https://www.m0nix.ga/js/encrypt/getlink.js"></script>
+    <script src="https://www.m0nix.ga/js/encrypt/swap.js"></script>
+    <script>
+      document.body.style.overflow = "hidden";
+    </script>
+  </body>
 </html>
