@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  transition: all 0.5s ease;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body.fontLoaded {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+#app {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+p,
+label {
+  line-height: 1.5em;
+}
+
+.bootstrap-dark input, .bootstrap-dark select {
+  background-color: #171717 !important;
+  color: #ffffff !important;
+}
+
+.bootstrap-dark a {
+  color: #007bff !important;
+}
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}
